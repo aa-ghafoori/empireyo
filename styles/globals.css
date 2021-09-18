@@ -1,16 +1,159 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.13.0/css/brands.css');
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.stroke > path {
+  @apply stroke-1;
 }
 
-* {
-  box-sizing: border-box;
+.animate {
+  width: fit-content;
+}
+.animate:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #d2aa4b;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.animate:hover:after {
+  transform: scaleX(1);
+}
+
+.hover-item {
+  transition: 300ms ease-in-out;
+}
+.hover-item:hover {
+  color: #d2aa4b;
+  cursor: pointer;
+}
+
+.btn-hover {
+  @apply group-hover:transform group-hover:translate-x-2 ease-out duration-500;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon:hover:before {
+  -webkit-animation: toTopFromBottom 200ms forwards;
+  -moz-animation: toTopFromBottom 200ms forwards;
+  animation: toTopFromBottom 200ms forwards;
+}
+
+.facebook::before {
+  font-family: 'Font Awesome 5 Brands';
+  content: '\f39e';
+}
+
+.instagram::before {
+  font-family: 'Font Awesome 5 Brands';
+  content: '\f16d';
+}
+
+.linkedin::before {
+  font-family: 'Font Awesome 5 Brands';
+  content: '\f0e1';
+}
+
+.icon2::before {
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: '\f30b';
+}
+
+.icon2:hover:before {
+  -webkit-animation: toRightFromLeft 500ms forwards;
+  -moz-animation: toRightFromLeft 500ms forwards;
+  animation: toRightFromLeft 500ms forwards;
+}
+
+@-webkit-keyframes toTopFromBottom {
+  49% {
+    -webkit-transform: translateY(-50%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes toTopFromBottom {
+  49% {
+    -moz-transform: translateY(-50%);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(50%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toTopFromBottom {
+  49% {
+    transform: translateY(-50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes toRightFromLeft {
+  49% {
+    -webkit-transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes toRightFromLeft {
+  49% {
+    -moz-transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translateX(50%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toRightFromLeft {
+  49% {
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  51% {
+    opacity: 1;
+  }
 }
