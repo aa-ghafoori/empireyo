@@ -16,7 +16,7 @@ function Nav({ show }) {
         !state.navClicked && 'hidden'
       } lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
         show && 'text-black'
-      } lg:hidden`}
+      }`}
     >
       <XIcon
         onClick={navClickHandler}
