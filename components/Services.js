@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Services() {
   return (
-    <div className='p-6 py-14 border-b-[1px] border-[#676767] m-auto max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl text-lg leading-8 lg:grid lg:grid-cols-2'>
+    <div className='p-6 py-14 border-b-[1px] border-[#676767] responsive text-lg leading-8 lg:grid lg:grid-cols-2'>
       <div className='px-6'>
         <h2 className='text-3xl font-semibold mt-12'>Trustable Services</h2>
         <p className='my-8'>

@@ -6,9 +6,8 @@ import {
 import Header from '../components/Header/Header';
 import Nav from '../components/Header/Nav';
 import { useStateValue } from '../context/StateProvider';
-import styles from './contact.module.css';
-import * as actionTypes from '../context/actionTypes';
 import { Fragment } from 'react';
+import * as actionTypes from '../context/actionTypes';
 
 function contact() {
   const [state, dispatch] = useStateValue();
@@ -40,7 +39,7 @@ function contact() {
             color: 'white',
           }}
         >
-          <div className=' max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl m-auto lg:pt-10 lg:flex justify-between'>
+          <div className=' responsive lg:pt-10 lg:flex justify-between'>
             <div className='lg:px-6'>
               <h1 className='font-bold text-5xl '>
                 Empireyo will breathe <em> new life </em> to your online
@@ -65,7 +64,7 @@ function contact() {
           </div>
         </div>
         <div className='bg-[#cd9a50] text-white p-12 text-center'>
-          <div className=' max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl m-auto'>
+          <div className='responsive'>
             <p className='text-lg leading-8'>
               Get in touch with us today through our contacts, and we will get
               back to you as soon as possible.
@@ -113,7 +112,7 @@ function contact() {
           </div>
         </div>
         <div className='py-14 border-t-[1px] border-gray-500 text-lg bg-black text-white'>
-          <p className='max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl m-auto'>
+          <p className='responsive'>
             Copyright © 2020 <strong>Empireyo</strong> <br />
             All rights reserved.
           </p>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function Video() {
   return (
-    <div className='relative text-white bg-[#161616] bg-opacity-80 p-6 py-14 flex items-center flex-col m-auto  '>
+    <div className='relative text-white bg-[#161616] bg-opacity-80 p-6 py-14 flex items-center flex-col'>
       <Image
         src='/black-high.jpg'
         layout='fill'
@@ -31,14 +31,13 @@ function Video() {
         </div>
         <Link href='/video'>
           <a>
-            <div className='flex justify-center items-center w-full h-[70vh] lg:h-[15vw] lg:w-[25vw] m-auto min-w-[200px] min-h-[150px] my-12 relative group hover:cursor-pointer   '>
+            <div className='flex justify-center items-center w-full h-[70vh] lg:h-[15vw] lg:w-[25vw] m-auto min-w-[200px] min-h-[150px] my-12 relative group hover:cursor-pointer'>
               <Image
                 layout='fill'
                 src='/vid-emp.jpg'
                 className='object-center object-cover'
               />
               <PlayIcon className='z-20 w-1/12 min-w-[75px] text-[#c79624] transition transform ease-out duration-300 group-hover:scale-110 hover:cursor-pointer' />
-              {/* <div className='absolute m-auto w-1/12 h-1/12 min-w-[40px] bg-white'></div> */}
             </div>
           </a>
         </Link>

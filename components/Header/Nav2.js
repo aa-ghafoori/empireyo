@@ -6,9 +6,6 @@ import * as actionTypes from '../../context/actionTypes';
 
 function Nav({ show }) {
   const [state, dispatch] = useStateValue();
-  const navClickHandler = () => {
-    dispatch({ type: actionTypes.NAV_CLICKED });
-  };
 
   return (
     <div

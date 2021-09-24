@@ -12,6 +12,14 @@ body {
   @apply stroke-1;
 }
 
+.btn-hover {
+  @apply group-hover:transform group-hover:translate-x-2 ease-out duration-500;
+}
+
+.responsive {
+  @apply m-auto max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl;
+}
+
 .animate {
   width: fit-content;
 }
@@ -33,10 +41,6 @@ body {
 .hover-item:hover {
   color: #d2aa4b;
   cursor: pointer;
-}
-
-.btn-hover {
-  @apply group-hover:transform group-hover:translate-x-2 ease-out duration-500;
 }
 
 .icon::before {

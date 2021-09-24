@@ -1,5 +1,7 @@
 import { Fragment } from 'react';
-import Gallery from '../components/Gallery';
+import { useStateValue } from '../context/StateProvider';
+import * as actionTypes from '../context/actionTypes';
+import Gallery from '../components/Gallery/Gallery';
 import Gallery2 from '../components/Gallery2/Gallery2';
 import Header from '../components/Header/Header';
 import Nav from '../components/Header/Nav';
@@ -8,8 +10,6 @@ import Part2 from '../components/Part2';
 import Part3 from '../components/Part3';
 import Services from '../components/Services';
 import Video from '../components/Video';
-import { useStateValue } from '../context/StateProvider';
-import * as actionTypes from '../context/actionTypes';
 
 export default function Home() {
   const [state, dispatch] = useStateValue();

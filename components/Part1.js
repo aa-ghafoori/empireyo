@@ -15,7 +15,7 @@ function Part1() {
         color: 'white',
       }}
     >
-      <div className=' max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl m-auto w-full lg:pt-10'>
+      <div className=' responsive w-full lg:pt-10'>
         <h1 className='font-bold text-5xl '>
           The goal isn’t to build a platform. The goal is to build your
           business.

@@ -13,50 +13,8 @@ import Image9 from '../../public/photo.jpg';
 import timeImage from '../../public/time.jpg';
 
 function Gallery2() {
-  // return (
-  //   <div className=' flex flex-col items-center use-bootstrap'>
-  //     <h2 className='text-2xl w-[50vw] text-center my-20'>
-  //       “Design creates culture. Culture shapes values. Values determine the
-  //       future.”
-  //     </h2>
-  //     <div className='use-bootstrap'>
-  //       <Carousel className='h-[70vh]'>
-  //         <Carousel.Item className=''>
-  //           <Gallery2Item src={timeImage} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image1} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image2} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image3} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image4} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image6} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image5} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image7} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image8} />
-  //         </Carousel.Item>
-  //         <Carousel.Item>
-  //           <Gallery2Item src={Image9} />
-  //         </Carousel.Item>
-  //       </Carousel>
-  //     </div>
-  //   </div>
-  // );
   return (
-    <div className='pt-20 pb-5 px-6 grid justify-items-center m-auto '>
+    <div className='pt-20 pb-5 px-6 grid justify-items-center'>
       <h2 className='text-2xl w-[50vw] text-center mb-20 font-extrabold'>
         “Design creates culture. Culture shapes values. Values determine the
         future.”

@@ -2,7 +2,7 @@ import Button from './ui/Button';
 
 function Part3() {
   return (
-    <div className='bg-black flex flex-col items-center text-white p-6 m-auto '>
+    <div className='bg-black flex flex-col items-center text-white p-6 '>
       <h2 className='text-2xl w-[50vw] text-center mt-16 mb-10  font-bold'>
         Enough Talk, Let's Build Something Together
       </h2>
