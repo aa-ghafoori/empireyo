@@ -28,7 +28,7 @@ function Header() {
   }, [state.navClicked]);
 
   return (
-    <div
+    <nav
       className={`${show ? 'bg-white' : 'bg-transparent'} ${
         state.navClicked && 'overflow-hidden '
       } fixed top-0  w-full px-6 py-3 z-50 transition transform duration-300 lg:px-20`}
@@ -50,7 +50,7 @@ function Header() {
         />
         <Nav2 show={show} className='hidden lg:block ' />
       </div>
-    </div>
+    </nav>
   );
 }
 

@@ -27,34 +27,34 @@ function Gallery2() {
         className='w-full'
       >
         <div>
-          <Gallery2Item src={timeImage} />
+          <Gallery2Item alt='' src={timeImage} />
         </div>
         <div>
-          <Gallery2Item src={Image1} />
+          <Gallery2Item alt='' src={Image1} />
         </div>
         <div>
-          <Gallery2Item src={Image2} />
+          <Gallery2Item alt='' src={Image2} />
         </div>
         <div>
-          <Gallery2Item src={Image3} />
+          <Gallery2Item alt='' src={Image3} />
         </div>
         <div>
-          <Gallery2Item src={Image4} />
+          <Gallery2Item alt='' src={Image4} />
         </div>
         <div>
-          <Gallery2Item src={Image5} />
+          <Gallery2Item alt='' src={Image5} />
         </div>
         <div>
-          <Gallery2Item src={Image6} />
+          <Gallery2Item alt='' src={Image6} />
         </div>
         <div>
-          <Gallery2Item src={Image7} />
+          <Gallery2Item alt='' src={Image7} />
         </div>
         <div>
-          <Gallery2Item src={Image8} />
+          <Gallery2Item alt='' src={Image8} />
         </div>
         <div>
-          <Gallery2Item src={Image9} />
+          <Gallery2Item alt='' src={Image9} />
         </div>
       </Carousel>
     </div>

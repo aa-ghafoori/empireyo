@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { useStateValue } from '../context/StateProvider';
+import Head from 'next/head';
 import * as actionTypes from '../context/actionTypes';
 import Gallery from '../components/Gallery/Gallery';
 import Gallery2 from '../components/Gallery2/Gallery2';
@@ -19,6 +20,17 @@ export default function Home() {
 
   return (
     <Fragment>
+      <Head>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'
+        />
+        <title>EMPIREYO | We make digital easy, beautiful and smart</title>
+        <meta
+          name='description'
+          content='Empireyo provides smart strategies, well researched digital campaigns, branding and development services, we have every digital solution your company needs.'
+        />
+      </Head>
       <div
         onClick={navClickHandler}
         className={

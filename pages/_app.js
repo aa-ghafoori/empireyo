@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { StateProvider, useStateValue } from '../context/StateProvider';
+import { StateProvider } from '../context/StateProvider';
 import reducer, { initialState } from '../context/reducer';
 
 function MyApp({ Component, pageProps }) {

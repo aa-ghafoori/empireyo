@@ -5,6 +5,7 @@ import {
 } from '@heroicons/react/outline';
 import Header from '../components/Header/Header';
 import Nav from '../components/Header/Nav';
+import Head from 'next/head';
 import { useStateValue } from '../context/StateProvider';
 import { Fragment } from 'react';
 import * as actionTypes from '../context/actionTypes';
@@ -17,6 +18,13 @@ function contact() {
 
   return (
     <Fragment>
+      <Head>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'
+        />
+        <title>Contact - Empireyo</title>
+      </Head>
       <div
         onClick={navClickHandler}
         className={
@@ -42,7 +50,7 @@ function contact() {
           <div className=' responsive lg:pt-10 lg:flex justify-between'>
             <div className='lg:px-6'>
               <h1 className='font-bold text-5xl '>
-                Empireyo will breathe <em> new life </em> to your online
+                Empireyo will breathe <em className='underline'> new life </em> to your online
                 presense.
               </h1>
               <p className='text-lg leading-8 py-10  '>
@@ -111,7 +119,7 @@ function contact() {
             </p>
           </div>
         </div>
-        <div className='py-14 border-t-[1px] border-gray-500 text-lg bg-black text-white'>
+        <div className='py-14 px-6 border-t-[1px] border-gray-500 text-lg bg-black text-white'>
           <p className='responsive'>
             Copyright © 2020 <strong>Empireyo</strong> <br />
             All rights reserved.

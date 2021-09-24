@@ -1,9 +1,10 @@
 import Image from 'next/image';
 
-function GalleryItem({ src, title, description, Icon }) {
+function GalleryItem({ src, title, description, Icon, alt }) {
   return (
     <div className='group p-6 m-4 min-h-[400px] relative cursor-pointer flex flex-col justify-between text-white bg-gradient-to-b from-[rgba(15,15,15,0)] to-[rgba(15,15,15,.75)] hover:bg-gradient-to-b hover:from-[rgba(0,0,0,0)] hover:to-[#d2aa4b] w-full'>
       <Image
+        alt={alt}
         src={src}
         layout='fill'
         objectFit='cover'

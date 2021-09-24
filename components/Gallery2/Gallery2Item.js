@@ -1,8 +1,15 @@
 import Image from 'next/image';
-function Gallery2Item({ src }) {
+function Gallery2Item({ src, alt }) {
   return (
     <div>
-      <Image src={src} layout='responsive' height={100} width={200} className='object-cover object-center' />
+      <Image
+        alt={alt}
+        src={src}
+        layout='responsive'
+        height={100}
+        width={200}
+        className='object-cover object-center'
+      />
     </div>
   );
 }
