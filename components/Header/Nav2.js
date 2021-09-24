@@ -12,16 +12,12 @@ function Nav({ show }) {
 
   return (
     <div
-      className={`bg-black text-white text-xl my-8 p-10 h-full absolute top-0 right-0 z-20 ${
+      className={` text-white text-xl my-8 p-10 h-full absolute top-0 right-0 z-20 ${
         !state.navClicked && 'hidden'
       } lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
         show && 'text-black'
       }`}
     >
-      <XIcon
-        onClick={navClickHandler}
-        className='fixed top-10 right-8 h-8 cursor-pointer lg:hidden'
-      />
       <div className='font-bold lg:flex justify-evenly w-full'>
         <HeaderItem>About</HeaderItem>
         <HeaderItem>Work</HeaderItem>
@@ -29,7 +25,11 @@ function Nav({ show }) {
           <HeaderItem>What we do</HeaderItem>
         </div>
         <HeaderItem>News</HeaderItem>
-        <HeaderItem>Contact</HeaderItem>
+        <Link href='/contact'>
+          <a>
+            <HeaderItem>Contact</HeaderItem>
+          </a>
+        </Link>
       </div>
       <div className='my-6 lg:hidden'>
         <h4 className='text-[#d2aa4b] mb-2'>About EMPIREYO</h4>

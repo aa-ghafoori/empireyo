@@ -20,7 +20,7 @@ function Nav({ show }) {
     >
       <XIcon
         onClick={navClickHandler}
-        className='fixed top-10 right-8 h-8 cursor-pointer lg:hidden'
+        className='absolute top-10 right-8 h-8 cursor-pointer lg:hidden'
       />
       <div className='font-bold lg:flex justify-evenly w-full'>
         <HeaderItem>About</HeaderItem>
@@ -29,7 +29,13 @@ function Nav({ show }) {
           <HeaderItem>What we do</HeaderItem>
         </div>
         <HeaderItem>News</HeaderItem>
-        <HeaderItem>Contact</HeaderItem>
+        <div onClick={navClickHandler}>
+          <Link href='/contact'>
+            <a>
+              <HeaderItem>Contact</HeaderItem>
+            </a>
+          </Link>
+        </div>
       </div>
       <div className='my-6 lg:hidden'>
         <h4 className='text-[#d2aa4b] mb-2'>About EMPIREYO</h4>

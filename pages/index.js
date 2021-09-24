@@ -9,7 +9,6 @@ import Part3 from '../components/Part3';
 import Services from '../components/Services';
 import Video from '../components/Video';
 import { useStateValue } from '../context/StateProvider';
-import styles from './index.module.css';
 import * as actionTypes from '../context/actionTypes';
 
 export default function Home() {
@@ -22,7 +21,11 @@ export default function Home() {
     <Fragment>
       <div
         onClick={navClickHandler}
-        className={state.navClicked ? styles.navClicked : styles.navNotClicked}
+        className={
+          state.navClicked
+            ? 'cursor-pointer overflow-hidden w-full h-screen transform -translate-x-1/3 scale-75 transition-transform duration-700 ease-in-out'
+            : 'w-full'
+        }
       >
         <Header />
         <Part1 />
@@ -33,7 +36,7 @@ export default function Home() {
         <Gallery2 />
         <Part3 />
       </div>
-      <Nav  />
+      <Nav />
     </Fragment>
   );
 }

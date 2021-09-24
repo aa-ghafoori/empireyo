@@ -4,8 +4,8 @@ function Gallery2Item({ src }) {
     // <div className='h-[60vh] w-[100vw] relative'>
     //   <Image src={src} layout='fill' className='object-contain' />
     // </div>
-    <div className='h-[50vh]'>
-      <Image src={src} layout='responsive' className='object-cover object-center' />
+    <div className=''>
+      <Image src={src} layout='responsive' height={100} width={200} className='object-cover object-center' />
     </div>
   );
 }

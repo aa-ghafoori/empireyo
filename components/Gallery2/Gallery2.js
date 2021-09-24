@@ -56,7 +56,7 @@ function Gallery2() {
   //   </div>
   // );
   return (
-    <div className='pt-20 pb-5 grid justify-items-center'>
+    <div className='pt-20 pb-5 px-6 grid justify-items-center m-auto '>
       <h2 className='text-2xl w-[50vw] text-center mb-20 font-extrabold'>
         “Design creates culture. Culture shapes values. Values determine the
         future.”

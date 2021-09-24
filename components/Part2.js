@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from './ui/Button';
 function Part2() {
   return (
-    <div className='flex flex-col lg:flex-row lg:items-stretch justify-center items-center p-6 border-b-[1px] border-[#676767] sm:max-w-screen-sm md:max-w-screen-md m-auto '>
+    <div className='flex flex-col lg:flex-row lg:items-stretch justify-center items-center p-6 border-b-[1px] border-[#676767] m-auto max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl '>
       <div className='relative flex w-full h-80 lg:flex-1 lg:h-auto lg:mx-6 my-10 '>
         <Image src='/Building-emp.jpg' layout='fill' objectFit='cover' />
       </div>

@@ -11,9 +11,9 @@ function video() {
     <div className='bg-black h-screen flex items-center' onClick={closePlayer}>
       <XIcon
         className='h-6 text-gray-300 absolute top-[2vw] right-[2vw] hover:cursor-pointer hover:text-white'
-        onClick={closePlayer}
+        
       />
-      <div className='relative pt-[56.25%] w-full mx-[2vw]'>
+      <div className='relative pt-[56.25%] w-full mx-[20vw]'>
         <ReactPlayer
           url='https://www.youtube.com/watch?v=iCk2ocTHMKA'
           controls

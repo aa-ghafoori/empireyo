@@ -19,7 +19,15 @@ function Header() {
       // } else {}
       window.pageYOffset > 10 ? setShow(true) : setShow(false);
     };
-  }, []);
+    if (state.navClicked) {
+      document.body.style.backgroundColor = 'black';
+    } else {
+      document.body.style.backgroundColor = 'transparent';
+    }
+    return () => {
+      setShow(null);
+    };
+  }, [state.navClicked]);
 
   return (
     <div className=''>
@@ -28,7 +36,7 @@ function Header() {
           state.navClicked && 'overflow-hidden '
         } fixed top-0  w-full px-6  py-3 z-50 transition transform duration-300 lg:px-20`}
       >
-        <div className='flex justify-between m-auto w-full max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-7xl   '>
+        <div className='flex justify-between m-auto max-w-md sm:max-w-screen-sm md:max-w-screen-md lg:max-w-4xl   '>
           <Link href='/'>
             <a>
               <img
