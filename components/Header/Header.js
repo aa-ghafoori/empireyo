@@ -29,9 +29,7 @@ function Header() {
 
   return (
     <nav
-      className={`${show ? 'bg-white' : 'bg-transparent'} ${
-        state.navClicked && 'overflow-hidden '
-      } fixed top-0  w-full px-6 py-3 z-50 transition transform duration-300 lg:px-20`}
+      className={`${show ? 'bg-white' : 'bg-transparent'} fixed top-0 w-full px-6 py-3 z-50 transition transform duration-300 lg:px-20`}
     >
       <div className='flex justify-between responsive'>
         <Link href='/'>
@@ -48,7 +46,7 @@ function Header() {
             show ? 'text-black' : 'text-white'
           } stroke cursor-pointer lg:hidden`}
         />
-        <Nav2 show={show} />
+        {/* <Nav2 show={show} /> */}
       </div>
     </nav>
   );
