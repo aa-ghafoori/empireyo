@@ -31,7 +31,7 @@ function Header() {
     <nav
       className={`${show ? 'bg-white' : 'bg-transparent'} fixed top-0 w-full px-6 py-3 z-50 transition transform duration-300 lg:px-20`}
     >
-      <div className='flex justify-between responsive'>
+      <div className='flex justify-between responsive items-center m-0'>
         <Link href='/'>
           <a>
             <img
@@ -46,7 +46,7 @@ function Header() {
             show ? 'text-black' : 'text-white'
           } stroke cursor-pointer lg:hidden`}
         />
-        {/* <Nav2 show={show} /> */}
+        <Nav2 show={show} />
       </div>
     </nav>
   );
