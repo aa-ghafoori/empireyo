@@ -1,17 +1,10 @@
 import HeaderItem from './HeaderItem';
 import Link from 'next/link';
-import { useStateValue } from '../../context/StateProvider';
-import { XIcon } from '@heroicons/react/outline';
-import * as actionTypes from '../../context/actionTypes';
 
-function Nav({ show }) {
-  const [state, dispatch] = useStateValue();
-
+function Nav2({ show }) {
   return (
     <nav
-      className={` text-white text-xl my-8 p-10 h-full absolute top-0 right-0 z-20 ${
-        !state.navClicked && 'hidden'
-      } lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
+      className={`hidden text-white text-xl z-20 lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
         show && 'text-black'
       }`}
     >
@@ -61,4 +54,4 @@ function Nav({ show }) {
   );
 }
 
-export default Nav;
+export default Nav2;

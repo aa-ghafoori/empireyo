@@ -1,7 +1,7 @@
 import Image from 'next/image';
 function Gallery2Item({ src, alt }) {
   return (
-    <div>
+    <div className='px-2 sm:px-3 lg:px-6'>
       <Image
         alt={alt}
         src={src}

@@ -13,7 +13,7 @@ function video() {
         className='h-6 text-gray-300 absolute top-[2vw] right-[2vw] hover:cursor-pointer hover:text-white'
         
       />
-      <div className='relative pt-[56.25%] w-full mx-[20vw]'>
+      <div className='relative pt-[56.25%] w-full'>
         <ReactPlayer
           url='https://www.youtube.com/watch?v=iCk2ocTHMKA'
           controls

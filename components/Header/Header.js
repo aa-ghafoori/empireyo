@@ -48,7 +48,7 @@ function Header() {
             show ? 'text-black' : 'text-white'
           } stroke cursor-pointer lg:hidden`}
         />
-        <Nav2 show={show} className='hidden lg:block ' />
+        <Nav2 show={show} />
       </div>
     </nav>
   );

@@ -14,9 +14,7 @@ function Nav({ show }) {
     <nav
       className={`bg-black text-white text-xl my-8 p-10 h-full absolute top-0 right-0 z-20 ${
         !state.navClicked && 'hidden'
-      } lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
-        show && 'text-black'
-      } lg:hidden`}
+      } ${show && 'text-black'} lg:hidden`}
     >
       <XIcon
         onClick={navClickHandler}
