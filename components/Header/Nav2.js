@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Nav2({ show }) {
   return (
     <nav
-      className={`hidden text-white text-xl z-20 lg:flex lg:static lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
+      className={`hidden h-0 w-0 text-white text-xl z-20 lg:h-auto lg:flex lg:w-full lg:px-6 lg:py-3 lg:bg-transparent lg:my-0 lg:text-lg lg:max-w-2xl ${
         show && 'text-black'
       }`}
     >
